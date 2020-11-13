@@ -27,21 +27,21 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes: routes
   // routes
 });
 
 // if ruquires login authentication is requerired
 router.beforeEach((to, from, next) => {
-  const requiresAuth = to.matched.some(x => x.meta.requiresAuth)
+  const requiresAuth = to.matched.some(x => x.meta.requiresAuth);
   if (requiresAuth && !auth.currentUser) {
     // stay to the page
-    next('/')
+    next("/");
   } else {
     // go to attempting page
-    next()
+    next();
   }
-})
+});
 
 export default router;
