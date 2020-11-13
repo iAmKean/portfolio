@@ -1,5 +1,8 @@
 <template>
   <div class="login">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+    test aos 
+    </div>
     <button type="submit" @click="login()">Login</button>
   </div>
 </template>
@@ -8,6 +11,7 @@
 // @ is an alias to /src
 import VueRouter from "vue-router";
 const { isNavigationFailure, NavigationFailureType } = VueRouter;
+import AOS from 'aos';
 
 export default {
   name: "Login",
@@ -20,6 +24,9 @@ export default {
         }
       });
     }
+  },
+  created() {
+    AOS.init()
   }
 };
 </script>
