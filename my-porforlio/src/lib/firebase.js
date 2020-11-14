@@ -22,16 +22,26 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 // collection references
-// const usersCollection = db.collection('users')
+const usersCollection = db.collection("users");
 // const postsCollection = db.collection('posts')
 // const commentsCollection = db.collection('comments')
 // const likesCollection = db.collection('likes')
 
 export {
   db,
-  auth
-  // usersCollection,
+  auth,
+  usersCollection
   // postsCollection,
   // commentsCollection,
   // likesCollection
 };
+
+// rules_version = '2';
+// service cloud.firestore {
+//   match /databases/{database}/documents {
+//     match /{document=**} {
+//       allow read, write: if
+//           request.time < timestamp.date(2020, 12, 14);
+//     }
+//   }
+// }
