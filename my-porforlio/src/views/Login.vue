@@ -23,7 +23,7 @@
           label-width="120px"
           class="demo-ruleForm"
         >
-        <!--
+          <!--
           <el-form-item label="Email" prop="user">
             <el-input
               type="email"
@@ -93,8 +93,16 @@ export default {
         user: [{ validator: validateUser, trigger: "blur" }],
         pass: [{ validator: validatePass, trigger: "blur" }],
         email: [
-          { required: true, message: 'Please input email address', trigger: 'blur' },
-          { type: 'email', message: 'Please input correct email address', trigger: ['blur', 'change'] }
+          {
+            required: true,
+            message: "Please input email address",
+            trigger: "blur"
+          },
+          {
+            type: "email",
+            message: "Please input correct email address",
+            trigger: ["blur", "change"]
+          }
         ]
       },
       isValid: false

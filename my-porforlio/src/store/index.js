@@ -16,17 +16,18 @@ export default new Vuex.Store({
   actions: {
     async login({ dispatch }, form) {
       console.log(form);
-      await firebase.auth.signInWithEmailAndPassword(form.email, form.pass)
-      .then(data => {
-        dispatch("fetchuserProfile", data);
-      })
-      .catch(error => {
-        console.log(error);
-      });
+      await firebase.auth
+        .signInWithEmailAndPassword(form.email, form.pass)
+        .then(data => {
+          dispatch("fetchuserProfile", data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
     },
     async logout({ commit }) {
-      await firebase.auth.signOut()
-      commit('setUserProfile', {})
+      await firebase.auth.signOut();
+      commit("setUserProfile", {});
     },
     async fetchuserProfile({ commit }, user) {
       console.log(user);
