@@ -11,15 +11,15 @@ export default new Vuex.Store({
   mutations: {
     setUserProfile(state, val) {
       state.userProfile = val;
+      console.log(state.userProfile);
     }
   },
   actions: {
     async login({ dispatch }, form) {
-      console.log(form);
       await firebase.auth
         .signInWithEmailAndPassword(form.email, form.pass)
         .then(data => {
-          dispatch("fetchuserProfile", data);
+          dispatch("fetchuserProfile");
         })
         .catch(error => {
           console.log(error);
@@ -29,10 +29,20 @@ export default new Vuex.Store({
       await firebase.auth.signOut();
       commit("setUserProfile", {});
     },
-    async fetchuserProfile({ commit }, user) {
-      console.log(user);
-      // const userProfile = await firebase.usersCollection(user.id).get();
-      commit("setUserProfile", user);
+    async fetchuserProfile({ commit }) {
+      var userProfile = firebase.usersCollection;
+      userProfile
+        .get()
+        .then(data => {
+          if (data.exists) {
+            commit("setUserProfile", data);
+          } else {
+            console.log("No such document!");
+          }
+        })
+        .catch(error => {
+          console.log("Error getting document:", error);
+        });
     }
   },
   modules: {}

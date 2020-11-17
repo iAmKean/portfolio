@@ -22,19 +22,9 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 // collection references
-const usersCollection = db.collection("users");
-// const postsCollection = db.collection('posts')
-// const commentsCollection = db.collection('comments')
-// const likesCollection = db.collection('likes')
+const usersCollection = db.collection("users").doc("q2YEnXADuqmNI66R7BW1"); //.doc(the document in the user table)
 
-export {
-  db,
-  auth,
-  usersCollection
-  // postsCollection,
-  // commentsCollection,
-  // likesCollection
-};
+export { db, auth, usersCollection };
 
 // rules_version = '2';
 // service cloud.firestore {

@@ -4,13 +4,13 @@
       <div class="login-title-image">
         <div class="title">{{ pageTitle }}</div>
         <div class="image">
-          <el-image
+          <!-- <el-image
             src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg"
           >
             <div slot="error" class="image-slot">
               <i class="el-icon-picture-outline"></i>
             </div>
-          </el-image>
+          </el-image> -->
         </div>
       </div>
       <div class="form-inputs">
