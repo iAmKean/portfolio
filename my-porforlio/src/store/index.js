@@ -6,7 +6,13 @@ import router from "../router";
 Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
-    userProfile: {}
+    userProfile: {},
+    websiteInfo: {
+      name: "iAmKean.github.io",
+      url: "https://iamkean.github.io/",
+      owner: "Keanu T. Dela Cruz",
+      year: "2020"
+    }
   },
   mutations: {
     setUserProfile(state, val) {
