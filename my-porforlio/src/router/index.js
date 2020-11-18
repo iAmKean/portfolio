@@ -39,8 +39,8 @@ router.beforeEach((to, from, next) => {
     // stay to the page
     next("/");
   } else {
-    // go to attempting page
     next();
+    // go to attempting page
   }
 });
 

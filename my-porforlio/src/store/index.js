@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import * as firebase from "../lib/firebase";
-// import router from "./router";
+import router from "../router";
 
 Vue.use(Vuex);
 export default new Vuex.Store({
@@ -11,7 +11,6 @@ export default new Vuex.Store({
   mutations: {
     setUserProfile(state, val) {
       state.userProfile = val;
-      console.log(state.userProfile);
     }
   },
   actions: {
@@ -19,7 +18,10 @@ export default new Vuex.Store({
       await firebase.auth
         .signInWithEmailAndPassword(form.email, form.pass)
         .then(data => {
-          dispatch("fetchuserProfile");
+          localStorage.setItem("uid", data.user.uid);
+          if (data) {
+            dispatch("fetchuserProfile");
+          }
         })
         .catch(error => {
           console.log(error);
@@ -27,6 +29,7 @@ export default new Vuex.Store({
     },
     async logout({ commit }) {
       await firebase.auth.signOut();
+      localStorage.removeItem("uid");
       commit("setUserProfile", {});
     },
     async fetchuserProfile({ commit }) {
@@ -36,6 +39,7 @@ export default new Vuex.Store({
         .then(data => {
           if (data.exists) {
             commit("setUserProfile", data);
+            router.push("/home");
           } else {
             console.log("No such document!");
           }
