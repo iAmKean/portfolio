@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    <Header />
-    <Introduction />
-    <Profile />
-    <Skill />
-    <Experience />
-    <Achievement />
-    <About />
-    <Footer />
+    <Header :class="defaultClass.common" />
+    <Introduction :class="defaultClass.section" />
+    <Profile :class="defaultClass.section" />
+    <Skill :class="defaultClass.section" />
+    <Experience :class="defaultClass.section" />
+    <Achievement :class="defaultClass.section" />
+    <About :class="defaultClass.section" />
+    <Footer :class="defaultClass.common" />
   </div>
 </template>
 
@@ -23,6 +23,14 @@ export default {
     Achievement: () => import("../components/home/Achievement.vue"),
     About: () => import("../components/home/About.vue"),
     Footer: () => import("../components/footer/index.vue")
+  },
+  data() {
+    return {
+      defaultClass: {
+        section: 'content-section',
+        common: 'common-section',
+      }
+    };
   }
 };
 </script>
