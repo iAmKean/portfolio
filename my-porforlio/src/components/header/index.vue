@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-title">
-      {{ webSiteName }}
+      <a :href="websiteInfo.url">{{ websiteInfo.name }}</a>
     </div>
     <div class="header-hamburger">
       <div class="bar"></div>
@@ -13,11 +13,11 @@ export default {
   name: "Header",
   data() {
     return {
-      webSiteName: '',
+      websiteInfo: {}
     };
   },
   mounted() {
-    this.webSiteName = this.$store.state.websiteInfo.name;
+    this.websiteInfo = this.$store.state.websiteInfo;
   }
 };
 </script>

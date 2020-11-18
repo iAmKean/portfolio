@@ -29,8 +29,8 @@ export default {
   data() {
     return {
       defaultClass: {
-        section: 'content-section',
-        common: 'common-section',
+        section: "content-section",
+        common: "common-section"
       }
     };
   }
