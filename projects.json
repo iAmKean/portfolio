@@ -14,7 +14,7 @@
         {
             "title": "AA Entertainment-Black (Web/Mobile)",
             "description": "This website is made of VueJS, Sass and JavaScript.",
-            "image": "AA Entertainment-Black (Web/Mobile)",
+            "image": "AA Entertainment-Black (Web/Mobile).jpg",
             "link": "https://iamkean.github.io/aa-entertainment-package-network/",
             "tools": [
                 "vuejs.png",
@@ -25,7 +25,7 @@
         {
             "title": "Lottery",
             "description": "This website is made of VueJS, Vant and TypeScript.",
-            "image": "Lottery",
+            "image": "Lottery.jpg",
             "link": "https://iamkean.github.io/wap.lottery/",
             "tools": [
                 "vuejs.png",
@@ -36,7 +36,7 @@
         {
             "title": "Live H5",
             "description": "This website is made of VueJS, Vant and TypeScript.",
-            "image": "Live H5",
+            "image": "Live H5.jpg",
             "link": "https://iamkean.github.io/wap.live-anchor/",
             "tools": [
                 "vuejs.png",
@@ -47,7 +47,7 @@
         {
             "title": "Donkey Pen",
             "description": "This website is made of VueJS, Vant and TypeScript.",
-            "image": "Donkey Pen",
+            "image": "Donkey Pen.jpg",
             "link": "https://iamkean.github.io/wap.donkey-pen/#/",
             "tools": [
                 "vuejs.png",
@@ -58,7 +58,7 @@
         {
             "title": "Obstain Bet Wap",
             "description": "This website is made of VueJS, Vant and JavaScript.",
-            "image": "Obstain Bet Wap",
+            "image": "Obstain Bet Wap.jpg",
             "link": "https://iamkean.github.io/wap.obstain-bet/",
             "tools": [
                 "vuejs.png",
@@ -69,7 +69,7 @@
         {
             "title": "Obstain Bet Web",
             "description": "This website is made of VueJS, iView UI and JavaScript.",
-            "image": "Obstain Bet Web",
+            "image": "Obstain Bet Web.jpg",
             "link": "https://iamkean.github.io/obstain-bet/",
             "tools": [
                 "vuejs.png",
