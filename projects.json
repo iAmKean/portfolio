@@ -1,0 +1,91 @@
+{
+    "projects": [
+        {
+            "title": "AA Entertainment (Web/Mobile)",
+            "description": "This website is made of HTML, CSS and JavaScript.",
+            "image": "AA Entertainment.jpg",
+            "link": "https://iamkean.github.io/aa-entertainment/",
+            "tools": [
+                "html.png",
+                "css.png",
+                "js.png"
+            ]
+        },
+        {
+            "title": "AA Entertainment-Black (Web/Mobile)",
+            "description": "This website is made of VueJS, Sass and JavaScript.",
+            "image": "AA Entertainment-Black (Web/Mobile)",
+            "link": "https://iamkean.github.io/aa-entertainment-package-network/",
+            "tools": [
+                "vuejs.png",
+                "sass.png",
+                "js.png"
+            ]
+        },
+        {
+            "title": "Lottery",
+            "description": "This website is made of VueJS, Vant and TypeScript.",
+            "image": "Lottery",
+            "link": "https://iamkean.github.io/wap.lottery/",
+            "tools": [
+                "vuejs.png",
+                "vant.png",
+                "ts.png"
+            ]
+        },
+        {
+            "title": "Live H5",
+            "description": "This website is made of VueJS, Vant and TypeScript.",
+            "image": "Live H5",
+            "link": "https://iamkean.github.io/wap.live-anchor/",
+            "tools": [
+                "vuejs.png",
+                "vant.png",
+                "ts.png"
+            ]
+        },
+        {
+            "title": "Donkey Pen",
+            "description": "This website is made of VueJS, Vant and TypeScript.",
+            "image": "Donkey Pen",
+            "link": "https://iamkean.github.io/wap.donkey-pen/#/",
+            "tools": [
+                "vuejs.png",
+                "vant.png",
+                "ts.png"
+            ]
+        },
+        {
+            "title": "Obstain Bet Wap",
+            "description": "This website is made of VueJS, Vant and JavaScript.",
+            "image": "Obstain Bet Wap",
+            "link": "https://iamkean.github.io/wap.obstain-bet/",
+            "tools": [
+                "vuejs.png",
+                "vant.png",
+                "js.png"
+            ]
+        },
+        {
+            "title": "Obstain Bet Web",
+            "description": "This website is made of VueJS, iView UI and JavaScript.",
+            "image": "Obstain Bet Web",
+            "link": "https://iamkean.github.io/obstain-bet/",
+            "tools": [
+                "vuejs.png",
+                "js.png"
+            ]
+        },
+        {
+            "title": "Opendraw Mobile",
+            "description": "This website is made of VueJS, Vant and TypeScript.",
+            "image": "Opendraw Mobile.jpg",
+            "link": "https://iamkean.github.io/wap.opendraw/",
+            "tools": [
+                "vuejs.png",
+                "vant.png",
+                "ts.png"
+            ]
+        }
+    ]
+}
